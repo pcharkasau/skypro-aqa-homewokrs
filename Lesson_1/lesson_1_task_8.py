@@ -15,3 +15,9 @@ def some_function(num):
     print(num[4])
 
 some_function(num)
+
+# альтернативный вариант решения от наставника
+def some_function(num):
+    print(num, end ='')
+some_function("Строка для вывода: ")
+some_function(880005553535)
