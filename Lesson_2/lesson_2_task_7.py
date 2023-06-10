@@ -5,9 +5,14 @@
 
 lst = [11, 5, 8, 32, 15, 3, 20, 132, 21, 4, 555, 9, 20]
 
-summa = 0
+sum_of_list = 0
 
 for num in lst:
-    summa += num
+    sum_of_list += num
 
-print("Сумма чисел в списке: ", summa)
+print("Сумма чисел в списке: ", sum_of_list)
+
+# альтернативный вариант решения
+# list = [11, 5, 8, 32, 15, 3, 20, 132, 21, 4, 555, 9, 20]
+# sum_of_list = sum(list)
+# print(sum_of_list)
