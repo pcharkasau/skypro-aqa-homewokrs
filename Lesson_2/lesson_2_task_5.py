@@ -3,16 +3,34 @@
 # 2. Напишите функцию month_to_season(), которая принимает 1 аргумент — номер месяца — и возвращает название сезона, к которому относится этот месяц.
 # Например, передаем 2, на выходе получаем «Зима».
 
-mon = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"]
+month = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"]
 season = ["Зима", "Весна", "Лето", "Осень"]
 
-n = int(input("Введите номер месяца: "))
+mon = int(input("Введите номер месяца: "))
+def month_to_season(mon):
+    if mon == 1:
+        print(season[0])
+    if mon == 2:
+        print(season[0])
+    if mon == 3:
+        print(season[1])
+    if mon == 4:
+        print(season[1])
+    if mon == 5:
+        print(season[1])
+    if mon == 6:
+        print(season[2])
+    if mon == 7:
+        print(season[2])
+    if mon == 8:
+        print(season[2])
+    if mon == 9:
+        print(season[3])
+    if mon == 10:
+        print(season[3])
+    if mon == 11:
+        print(season[3])
+    if mon == 12:
+        print(season[0])
 
-def month_to_season(n):
-    for n in mon (0, len(mon)):
-        if n == 0 or 1:
-            print(season[0])
-        if n == 2 or 3 or 4:
-            print(season[0])
-
-month_to_season(n)
+month_to_season(mon)
