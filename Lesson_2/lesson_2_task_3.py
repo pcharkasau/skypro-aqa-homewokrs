@@ -4,6 +4,8 @@
 #    *Площадь квадрата = сторона * сторона.*
 # 3. Если переданный аргумент был не целым, округлите результат вверх.
 
+import math
+
 n = input("Введите сторону квадрата: ")
 n = float(n)
 def square(n):
@@ -12,7 +14,7 @@ def square(n):
         res = n * n
         print(f"Площадь: ", res)
     else:
-        n = round(n)
         res = n * n
-        print(f"Площадь: ", res)
+        res_new = math.ceil(res)   # - результат_округления
+        print("Площадь: ", res_new)
 square(n)
