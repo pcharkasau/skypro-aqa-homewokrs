@@ -1,20 +1,12 @@
-# **Задание 4. FizzBuzz. Задачка с собеседования**
-# 1. Создайте файл lesson_2_task_4.py.
-# 2. Напишите функцию fizz_buzz, которая принимает один аргумент — n (число).
-# 3. Функция должна печатать числа от 1 до n. При этом:
-#   1. если число делится на 3, печатать `Fizz`;
-#   2. если число делится на 5, печатать `Buzz`;
-#   3. если число делится на 3 и на 5, печатать `FizzBuzz`.
-n = int(input("Введите число: "))
+# 5. Создайте файл `lesson_3_task_1.py`.
+# 6. Импортируйте в него класс `user`.
+# 7. Создайте новый экземпляр `User` и сохраните его в переменную `my_user`.
+# 8. Вызовите все методы у объекта в переменной `my_user`.
 
-def fizz_buzz(n):
-    for i in range(1, n+1):
-        if (i % 3 == 0) and (i % 5 == 0):
-            print("FizzBuzz")
-        elif i % 5 == 0:
-            print("Buzz")
-        elif i % 3 == 0:
-            print("Fizz")
-        else:
-            print(i, end=" \n")   
-fizz_buzz(n)
+from user import User
+
+my_user = User("Peter", "Pan")
+
+my_user.say_name()
+my_user.say_surname()
+my_user.say_name_surname()
